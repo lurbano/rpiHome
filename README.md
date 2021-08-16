@@ -136,10 +136,7 @@ sudo kill nnn
 
 # Music
 
-Install playsound:
-```console
-pip3 install playsound
-```
+Uses omxplayer (for now)
 
 
 # [EXAMPLE] Adding things to be controlled by the webpage
