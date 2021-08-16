@@ -2,7 +2,7 @@ import asyncio
 import subprocess
 import time
 
-alarm = {'h': 0, 'm': 38, 's': 0}
+alarm = {'h': 0, 'm': 41, 's': 0}
 
 async def tick(a):
     while 1:
@@ -17,6 +17,8 @@ async def tick(a):
             return "alarm"
 
 
-#subprocess.Popen('omxplayer -o local 1.mp4', shell=True)
+
 
 asyncio.run(tick(alarm))
+
+subprocess.Popen('omxplayer -o local 1.mp4', shell=True)
