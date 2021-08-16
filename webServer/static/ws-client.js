@@ -18,6 +18,17 @@ $(document).ready(function(){
             $("#signal").html("READY");
             $("#ws-status").html("Connected");
             $("#ws-status").css("background-color", "#afa");
+
+            //Clock
+            setInterval(function(){
+              let now = Date.now();
+              let h = now.getHours();
+              let m = now.getMinutes();
+              let s = now.getSeconds();
+              $("#clock").html(`${h}:${m}:${s}`);
+            }, 1000);
+
+            //end Clock
         };
 
         ws.onmessage = function(evt) {
