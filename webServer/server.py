@@ -68,7 +68,7 @@ class WSHandler(tornado.websocket.WebSocketHandler):
 	def open(self):
 		print ('[WS] Connection was opened.')
 		self.write_message('{"who": "server", "info": "on"}')
-		subprocess.Popen('omxplayer -o local 1.mp4', shell=True)
+		subprocess.Popen('omxplayer -o local 1.mp4')
 		#self.oled = oledU(128,32)
 
 
