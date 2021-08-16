@@ -1,7 +1,7 @@
 import asyncio
 import subprocess
 
-alarm = {h: 0, m: 38, s: 0}
+alarm = {'h': 0, 'm': 38, 's': 0}
 
 async def tick(a):
     while 1:
