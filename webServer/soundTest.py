@@ -6,7 +6,7 @@ async def tick(n):
     while i < n:
         await asyncio.sleep(1)
         print(i)
-        i++
+        i += 1
 
 
 #subprocess.Popen('omxplayer -o local 1.mp4', shell=True)
