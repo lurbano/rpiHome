@@ -134,6 +134,12 @@ pgrep -a python3
 sudo kill nnn
 ```
 
+# Music
+
+Install playsound:
+```console
+pip3 install playsound
+```
 
 
 # [EXAMPLE] Adding things to be controlled by the webpage

@@ -17,6 +17,7 @@ import argparse
 import asyncio
 #from numpy import arange, mean
 import numpy as np
+from playsound import playsound
 #from oledU import *
 
 
@@ -68,6 +69,7 @@ class WSHandler(tornado.websocket.WebSocketHandler):
 	def open(self):
 		print ('[WS] Connection was opened.')
 		self.write_message('{"who": "server", "info": "on"}')
+		playsound("1.mp4")
 		#self.oled = oledU(128,32)
 
 
