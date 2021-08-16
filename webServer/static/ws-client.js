@@ -20,13 +20,14 @@ $(document).ready(function(){
             $("#ws-status").css("background-color", "#afa");
 
             //Clock
-            let now = Date.now();
-            let h = now.getHours();
-            let m = now.getMinutes();
-            let s = now.getSeconds();
-            $("#clock").html(`${h}:${m}:${s}`);
+            //$("#clock").html("Clocking");
+            // let now = Date.now();
+            // let h = now.getHours();
+            // let m = now.getMinutes();
+            // let s = now.getSeconds();
+            // $("#clock").html(`${h}:${m}:${s}`);
             setInterval(function(){
-              let now = Date.now();
+              let now = new Date();
               let h = now.getHours();
               let m = now.getMinutes();
               let s = now.getSeconds();
